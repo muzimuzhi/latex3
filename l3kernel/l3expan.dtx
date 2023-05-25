@@ -517,6 +517,7 @@
 %     \exp_args:NNNo,
 %     \exp_args:NNNV,
 %     \exp_args:NNNv,
+%     \exp_args:NNcc,
 %     \exp_args:Nccc,
 %     \exp_args:NcNc,
 %     \exp_args:NcNo,
@@ -1212,7 +1213,7 @@
 %   In \pkg{l3basics}.
 % \end{macro}
 %
-% \begin{macro}[EXP]{\exp_args:NNc, \exp_args:Ncc, \exp_args:Nccc}
+% \begin{macro}[EXP]{\exp_args:NNc, \exp_args:Ncc, \exp_args:NNcc, \exp_args:Nccc}
 %   Here are the functions that turn their argument into csnames but are
 %   expandable.
 %    \begin{macrocode}
@@ -1220,6 +1221,13 @@
   { \exp_after:wN #1 \exp_after:wN #2 \cs:w # 3\cs_end: }
 \cs_new:Npn \exp_args:Ncc #1#2#3
   { \exp_after:wN #1 \cs:w #2 \exp_after:wN \cs_end: \cs:w #3 \cs_end: }
+\cs_new:Npn \exp_args:NNcc #1#2#3#4
+  {
+    \exp_after:wN #1
+    \exp_after:wN #2
+      \cs:w #3 \exp_after:wN \cs_end:
+      \cs:w #4 \cs_end:
+  }
 \cs_new:Npn \exp_args:Nccc #1#2#3#4
   {
     \exp_after:wN #1
