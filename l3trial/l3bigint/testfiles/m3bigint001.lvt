@@ -6,7 +6,6 @@
 
 \input{regression-test}
 
-\RequirePackage{expl3}
 \RequirePackage{l3bigint}
 \ExplSyntaxOn
 \debug_on:n { check-declarations , deprecation , log-functions }

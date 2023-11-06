@@ -7,7 +7,6 @@
 
 \AUTHOR{Bruno Le Floch}
 
-\RequirePackage{expl3}
 \RequirePackage{l3htoks}
 \ExplSyntaxOn
 \debug_on:n { check-declarations , deprecation , log-functions }

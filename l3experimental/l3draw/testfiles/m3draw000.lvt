@@ -5,7 +5,6 @@
 \documentclass{minimal}
 \input{regression-test}
 
-\RequirePackage{expl3}
 \ExplSyntaxOn
 \debug_on:n { check-declarations , deprecation }
 \ExplSyntaxOff

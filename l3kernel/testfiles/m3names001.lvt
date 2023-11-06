@@ -23,8 +23,6 @@
 % primitives don't have a 'pdf' prefix, so they are noted
 % with \texpdf.
 
-\RequirePackage{expl3}
-
 \makeatletter
 \def\finish{finish}
 \def\spec{special}

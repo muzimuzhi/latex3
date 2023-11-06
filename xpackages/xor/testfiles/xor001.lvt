@@ -2,8 +2,6 @@
 %           (C) 2012,2022 LaTeX Project
 % All rights reserved
 
-\RequirePackage{expl3}
-
 \tolerance=6000
 \emergencystretch=1cm
 \errorcontextlines=\maxdimen
