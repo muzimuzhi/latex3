@@ -1879,8 +1879,8 @@
 \cs_gset_nopar:Npn \g_@@_deprecation_off_tl { }
 \cs_gset_protected:Npn \__kernel_deprecation_code:nn #1#2
   {
-    \tl_gput_right:Nn \g_@@_deprecation_on_tl {#1}
-    \tl_gput_right:Nn \g_@@_deprecation_off_tl {#2}
+    \tl_build_gput_right:Nn \g_@@_deprecation_on_tl {#1}
+    \tl_build_gput_right:Nn \g_@@_deprecation_off_tl {#2}
   }
 %    \end{macrocode}
 % \end{variable}
